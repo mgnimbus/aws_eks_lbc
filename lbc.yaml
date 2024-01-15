@@ -1,0 +1,11 @@
+USER-SUPPLIED VALUES:
+clusterName: meda-dev-grizzly-eksdemotest
+image:
+  repository: 602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-load-balancer-controller
+region: us-east-1
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::328268088738:role/SAP-dev-mouse-lbc-iam-role
+  create: true
+  name: aws-load-balancer-controller
+vpcId: vpc-062dfddd00a0f659f
